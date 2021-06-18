@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 const SIZE = 12
 
@@ -17,17 +19,26 @@ func main() {
 
 	var banner string = "hello pointers"
 	fmt.Printf("address %x\n", &banner)
+	success := make(chan bool)
 	parseAddress(&banner)
-	parseValue(banner)
-
+	go parseValue(banner, success)
+	<-success
 }
 
-func parseValue(a string) {
+/**
+ * 值传递
+ */
+func parseValue(a string, success chan bool) {
 	fmt.Printf("address %x", &a)
 	fmt.Printf("value: %s\n", a)
+	success <- true
 }
+
+/**
+ * 引用传递
+ */
 func parseAddress(b *string) {
 	*b = "hello value"
-	fmt.Printf("address %x", b)
+	fmt.Printf("address %x ", b)
 	fmt.Printf("value: %s\n", *b)
 }
