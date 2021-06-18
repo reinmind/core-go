@@ -14,4 +14,20 @@ func main() {
 	if arr_ptr == &arr {
 		fmt.Println("Dawn of Gods.")
 	}
+
+	var banner string = "hello pointers"
+	fmt.Printf("address %x\n", &banner)
+	parseAddress(&banner)
+	parseValue(banner)
+
+}
+
+func parseValue(a string) {
+	fmt.Printf("address %x", &a)
+	fmt.Printf("value: %s\n", a)
+}
+func parseAddress(b *string) {
+	*b = "hello value"
+	fmt.Printf("address %x", b)
+	fmt.Printf("value: %s\n", *b)
 }
