@@ -1,4 +1,4 @@
-package main
+package fetch
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 )
 
 // 简单的获取http信息的程序
-func main() {
+func Main() {
 	for _, url := range os.Args[1:] {
 		response, err := http.Get(url)
 		if err != nil {

@@ -18,7 +18,7 @@ const (
 	blackIndex = 1
 )
 
-func main() {
+func Main() {
 	lissajous(os.Stdout)
 }
 

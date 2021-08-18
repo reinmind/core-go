@@ -1,4 +1,4 @@
-package main
+package dup1
 
 // 第一个版本的dup输出标准输入流中的出现多次的行，
 // 在行内容前是出现次数的计数。
@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func main() {
+func Main() {
 	// map是Go语言内置的key/value型数据结构，这个数据结构能够提供常数时间的存取操作
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)

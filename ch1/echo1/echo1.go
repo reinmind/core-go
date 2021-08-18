@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func Main() {
 	var s, sep string
 	// os.Args接受参数
 	for i := 1; i < len(os.Args); i++ {

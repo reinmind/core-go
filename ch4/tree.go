@@ -1,13 +1,13 @@
-package main
+package ch4
 
 import "fmt"
 
-type tree struct {
+type Tree struct {
 	value          int
-	lchild, rchild *tree
+	lchild, rchild *Tree
 }
 
-func AppendValues(values []int, t *tree) []int {
+func AppendValues(values []int, t *Tree) []int {
 	if t != nil {
 		values = AppendValues(values, t.lchild)
 		values = append(values, t.value)
@@ -16,8 +16,8 @@ func AppendValues(values []int, t *tree) []int {
 	return values
 }
 
-func main() {
-	t := tree{value: 10, lchild: &tree{value: 1}, rchild: &tree{value: 2}}
+func TreeMain() {
+	t := Tree{value: 10, lchild: &Tree{value: 1}, rchild: &Tree{value: 2}}
 	fmt.Printf("node value: %d \t lchild: %v,rchild: %v \n", t.value, t.lchild, t.rchild)
 	fmt.Printf("type of t: %T\t type of %T\n", t, &t)
 }
