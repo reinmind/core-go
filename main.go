@@ -1,12 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"prac/jwt"
+	"prac/itf"
 )
 
 func main() {
-	s := jwt.GenSimple()
-	fmt.Printf("%s\n", s)
-	jwt.Decode(s)
+	itf.Main()
 }
