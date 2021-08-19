@@ -1,9 +1,12 @@
 package main
 
 import (
-	"prac/decode"
+	"fmt"
+	"prac/jwt"
 )
 
 func main() {
-	decode.Main()
+	s := jwt.GenSimple()
+	fmt.Printf("%s\n", s)
+	jwt.Decode(s)
 }

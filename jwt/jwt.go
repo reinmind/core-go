@@ -3,19 +3,23 @@ package jwt
 import (
 	"fmt"
 	"os"
-	"time"
 
-	jwt "github.com/golang-jwt/jwt/v4"
+	jwtgo "github.com/golang-jwt/jwt/v4"
 )
 
 var hmacSampleSecret []byte
 
 func GenSimple() string {
-	token := jwt.NewWithClaims(jwt.SigningMethodHS256,
-		jwt.MapClaims{
-			"foo":  "bar",
-			"time": time.Now().Unix(),
-		})
+	customClaims := Planet{
+		2.5,
+		"moon",
+		0.25,
+		jwtgo.StandardClaims{
+			ExpiresAt: 15000,
+			Issuer:    "test",
+		},
+	}
+	token := jwtgo.NewWithClaims(jwtgo.SigningMethodHS256, customClaims)
 	s, err := token.SignedString(hmacSampleSecret)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "signing error: %v", err)
