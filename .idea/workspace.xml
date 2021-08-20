@@ -4,23 +4,63 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ebad1d4-81a0-45ae-ad48-32855eb3f26a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/go-projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/go-projects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/graph/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/graph/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/graph.go" beforeDir="false" afterPath="$PROJECT_DIR$/graph/graph.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lissajous/lissajous.go" beforeDir="false" afterPath="$PROJECT_DIR$/lissajous/lissajous.go" afterDir="false" />
+    <list default="true" id="f134ba3f-3496-4c97-ad62-9e7e7d5bd154" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/core-go.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jwt/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TOKEN.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/dup1/dup1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/dup1/words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/dup2/dup2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/dup2/words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/echo1/echo1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/fetch/fetch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/fetchall/fetchall.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/helloworld/helloworld.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/lissajous/lissajous.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch2/boiling.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch4/tree.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster-ca.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/decode/base64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/decoded.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itf/itf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/jwt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt/planet.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.base64" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1wjpMGaIXn1vl1xBsPcG3QlsIZv" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
+  <component name="Make.Settings">
+    <option name="autoScrollToSourceInToolWindow" value="true" />
+    <option name="useCygwin" value="true" />
+  </component>
+  <component name="ProjectId" id="1wz2McLdyAG0G0OuvsiKbzIFkNZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,25 +80,37 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.make" />
   </component>
   <component name="RunManager">
-    <configuration name="go build lissajous.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-projects" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/lissajous/lissajous.go" />
+    <configuration name="build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="build" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build lissajous.go" />
+        <item itemvalue="Makefile Target.build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
 </project>
