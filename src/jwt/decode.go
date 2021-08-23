@@ -3,8 +3,9 @@ package jwt
 import (
 	"encoding/json"
 	"fmt"
-	jwtgo "github.com/golang-jwt/jwt/v4"
 	"time"
+
+	jwtgo "github.com/golang-jwt/jwt/v4"
 )
 
 func Decode(tokenString string) string {
@@ -14,15 +15,13 @@ func Decode(tokenString string) string {
 		token, err := jwtgo.ParseWithClaims(tokenString, &Planet{},
 			// 一个用于返回密码的函数
 			// ParseWithClaims(tokenString string, claims jwt.Claims, keyFunc jwt.Keyfunc) (*jwt.Token, error)
-			func(token *jwtgo.Token) (interface{}, error) {
-				return []byte(nil), nil
-			})
-
+			func(token *jwtgo.Token) (interface{}, error) { return []byte(nil), nil })
+		// 解析传入的tokenString
 		if claims, ok := token.Claims.(*Planet); ok && token.Valid {
 			marshal, err := json.Marshal(claims)
 			if err == nil {
 				s = fmt.Sprintf(
-					"claims:%v\n", marshal)
+					"claims:%v\n", string(marshal))
 			}
 		} else {
 			fmt.Println(err)
